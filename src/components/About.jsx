@@ -162,7 +162,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              {stats.map((stat, index) => (
+              {stats.map((stat, index ) => (
                 <motion.div
                   key={index}
                   className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -188,7 +188,7 @@ export default function About() {
                   <p className="text-sm text-gray-500">{stat.description}</p>
                 </motion.div>
               ))}
-            </div>
+            </motion.div> {/* <-- ESTA É A LINHA QUE FOI CORRIGIDA */}
           </motion.div>
         </div>
       </div>
